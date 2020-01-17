@@ -1,0 +1,11 @@
+#my_list {
+  list-style-type: none;
+}
+.list_item {
+  display: inline;
+}
+.list_item:nth-child(3n)::after {
+  content: "\A";
+ white-space: pre;
+  ;
+}

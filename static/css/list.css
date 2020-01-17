@@ -1,0 +1,457 @@
+/*// Mixin for transition/transform*/
+/*.translate(@x; @y) {*/
+/*  -webkit-transform: translate(@x, @y);*/
+/*      -ms-transform: translate(@x, @y); // IE9+*/
+/*          transform: translate(@x, @y);*/
+/*}*/
+/*.transition(@transition) {*/
+/*  -webkit-transition: @transition;*/
+/*          transition: @transition;*/
+/*}*/
+/*.transition-transform(@transition) {*/
+/*  -webkit-transition: -webkit-transform @transition;*/
+/*     -moz-transition: -moz-transform @transition;*/
+/*       -o-transition: -o-transform @transition;*/
+/*          transition: transform @transition;*/
+/*}*/
+
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn {
+        width: 100%;
+    }
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%;
+    height: auto /* Could be more or less, depending on screen size */
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0, 0.6);
+    padding-top: 50px;
+}
+
+/* Add padding and center-align text to the container */
+.box {
+    padding: 16px;
+    text-align: center;
+    background: silver;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+    background-color: #f44336;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+    float: left;
+    width: 50%;
+    height: 28px;
+}
+
+.cross {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.cross:hover,
+.cross:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*model end*/
+#tick {
+    height: 30px;
+    width: 48px;
+    position: absolute;
+    right: 21%;
+    top: 23%;
+    display: none;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.ceiln_deck {
+    background: rgb(60, 60, 60, 0.2);
+}
+
+.deck_l2 {
+    float: left;
+
+}
+
+#myInput {
+    width: 422px;
+    height: 40px;
+    font-size: 35px;
+}
+
+.addBtn {
+    height: 47px;
+    width: 164px;
+    position: absolute;
+}
+
+body {
+    background: url("images/home.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 123px;
+    left: 200px;
+    padding: 10px;
+    background: rgb(60, 60, 60, 0.1);
+    border-radius: 25px;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    /*box-shadow:         3px 3px 5px 6px #ccc;*/
+    box-shadow: 3px 3px 5px 6px #90b0d6;
+    /*    background-color :#f5f5f5;*/
+    /*width: 600px;*/
+    /*margin: 0 auto;*/
+    /*padding: 0;*/
+
+}
+
+/*.lines{*/
+/*     border-left: 1px solid #ffaa9f;*/
+/*  border-right: 1px solid #ffaa9f;*/
+/*  width: 2px;*/
+/*  float: left;*/
+/*  height: 495px;*/
+/*  margin-left: 40px;*/
+/*}*/
+
+ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+#icons {
+    position: absolute;
+    left: 838px;
+    top: 123px;
+}
+
+#icons button:hover {
+    background-color: #3e8e41;
+}
+
+/*left: 838px;*/
+/*    top: 123px;*/
+#icons button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    height: 166px;
+}
+
+/*.btn{*/
+/*      background-color: DodgerBlue;*/
+/*  border: none;*/
+/*  color: white;*/
+/*  padding: 12px 16px;*/
+/*  font-size: 16px;*/
+/*  cursor: pointer;*/
+/*}*/
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*styling list items */
+.my_list {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 596px;
+    overflow: auto;
+
+    /*   color: #555;*/
+    /*font-size: 22px;*/
+    /*padding: 0 !important;*/
+    /*width: 500px;*/
+    /*font-family: courier, monospace;*/
+    /*border: 1px solid #dedede;*/
+}
+
+.h1 {
+    /*background: rgba(121, 171, 230, 0.61);*/
+    /*border: aqua;*/
+    color: #cd0000;
+    font-size: 42px;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+#h1 {
+    color: #1557ea;
+    text-align: center;
+}
+
+.btn {
+
+}
+
+#timechk {
+    color: #00adff;
+    align-content: center;
+    /* border: aquamarine; */
+    text-align: center;
+}
+
+.my_list li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 10px;
+    /*  list-style: none;*/
+    /*border-bottom: 1px dotted #ccc;*/
+    /*text-indent: 25px;*/
+    /*height: auto;*/
+    /*padding: 10px;*/
+    /*text-transform: capitalize;*/
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.my_list li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.my_list li:hover {
+    background: #ddd;
+}
+
+.my_list li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/*add checked marked when clicked*/
+.my_list li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/*styling the close button*/
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.bin {
+    /*    font-size: 16px;*/
+    /*position: relative;*/
+    /*float: right;*/
+    /*top: 9px;*/
+    /*right: 8px;*/
+    float: right;
+    position: relative;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.bin:hover {
+    background-color: dimgrey;
+    color: red;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.wrapper {
+/ / width: 1000 px;
+    width: 600px;
+    overflow-y: scroll;
+    position: relative;
+    height: 300px;
+}
+
+.deck_l2 img {
+    /*height: 40px;*/
+    /*width: auto;*/
+    /*justify-self: start;*/
+    margin-left: 20px;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    /*border-radius: 50%;*/
+
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+li a {
+    float: right;
+    /*display: inline;*/
+    /*display: block;*/
+    text-decoration: none;
+
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: relative;
+    margin-top: 0px;
+    /*text-align: center;*/
+    font-size: 20px;
+    color: #ddd;
+    text-shadow: 3px 3px 10px #000;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+
+}
+
+#stored-list li {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    /*display: block;*/
+    transition: 0.3s;
+    display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+#stored-list li:hover {
+    color: #f1f1f1;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#sim-sim {
+    position: absolute;
+    right: 8px;
+    font-size: 67px;
+    width: 74px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}

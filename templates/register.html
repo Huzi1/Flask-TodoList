@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/register.css">
+    <script type="text/javascript" src="static/js/util.js"></script>
+    <script type="text/javascript" src="static/js/register.js"></script>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+
+</head>
+<body>
+<div class="top_deck">
+    <ul>
+
+        <li><a href="#home">Login</a></li>
+
+        <li><a class="active" href="#regis">Register</a></li>
+    </ul>
+
+</div>
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+   href="https://unsplash.com/@kellysikkema?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+   target="_blank" rel="noopener noreferrer"
+   title="Download free do whatever you want high-resolution photos from Kelly Sikkema"><span
+        style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                                                          style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                                                          viewBox="0 0 32 32"><title>unsplash-logo</title><path
+        d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span
+        style="display:inline-block;padding:2px 3px">Kelly Sikkema</span></a>
+<div>
+    <form onsubmit="return false" name="myForm" id="myForm">
+        <table class="regis_tab">
+
+            <tr>
+                <th>
+                    <label for="username" class="label">Username</label>
+                </th>
+                <th>
+                    <input type="email" placeholder="Enter Email-ID" name="uname" required>
+                </th>
+
+            </tr>
+            <tr>
+                <th>
+                    <label for="password" class="label">Password</label>
+                </th>
+                <th>
+                    <input type="password" placeholder="Password" name="psw" required>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="confirm" class="label">Confirm Password</label>
+
+                </th>
+                <th>
+
+                    <input type="password" placeholder="Password" name="psw2" required>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Fname" class="label">First Name</label>
+                </th>
+                <th>
+                    <input type="text" name="fname">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="lname" class="label"> Last Name</label>
+                </th>
+                <th>
+                    <input type="text" name="lname">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="img" class="prof_img">Upload Image</label>
+                </th>
+                <td>
+                    <input type="file" name="img" id="uImage" accept="image/*">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+
+                    <button type="submit" id="regis_new" class="regis_new">Register</button>
+
+                </th>
+            </tr>
+
+
+        </table>
+
+    </form>
+</div>
+</body>
+</html>

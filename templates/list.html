@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/list.css">
+    <script src="https://kit.fontawesome.com/66464ed16c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/list.js"></script>
+    <script type="text/javascript" src="static/js/util.js"></script>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" id="clsebtn">&times;</a>
+    <div>
+        <ul id="stored-list">
+            {#    <a href="#">About</a>#}
+            {#    <a href="#">Services</a>#}
+            {#    <a href="#">Clients</a>#}
+            {#    <a href="#">Contact</a>#}
+
+        </ul>
+    </div>
+</div>
+
+<!-- Use any element to open the sidenav -->
+
+
+<div id="main">
+    <div class="ceiln_deck">
+        <nav>
+            <ul>
+                <li><a class="#home" href="/home">Home</a></li>
+                <li><a class="active">Catalogue</a></li>
+                <li><a href="logout">Log Out</a></li>
+
+
+                <li class="deck_l2">
+                    <a>
+                        <img class="circle" id="img" src="static/css/images/morty.jpeg" alt="Avatar">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <span id="sim-sim"><i class="fas fa-grip-horizontal"></i></span>
+    <br>
+    <br>
+    <div id="tick">
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+            <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1"
+                    cy="65.1"
+                    r="62.1"/>
+            <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round"
+                      stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+        </svg>
+
+    </div>
+    <div id="icons">
+        <button class="btn" id="save"><i class="fas fa-save" style="font-size: 50px"></i></button>
+        <button class="btn" id="3"><i class="fas fa-plus-circle" style="font-size: 50px"></i></button>
+        <button class="btn" id="delete"><i class="fas fa-trash-alt" style="font-size: 50px"></i></button>
+
+    </div>
+    <div class="container">
+
+        <h1 contentEditable="true" id="h1">list title..</h1>
+
+        <h3 id="timechk"></h3>
+
+
+        <input type="text" id="myInput" placeholder="Title...">
+        <button class="addBtn" id="addBtn">Add</button>
+
+        <div class="wrapper">
+            <ul id="my_list" class="my_list">
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="cross" title="Close Modal">×</span>
+        <form class="modal-content">
+            <div class="box">
+                <h1>Save current list</h1>
+                <p>Do you wish to save this list?</p>
+
+                <div class="clearfix">
+                    <button type="button" id="no-save" onclick="display()" class="cancelbtn">Delete</button>
+                    <button type="button" id="save-me" onclick="display()" class="deletebtn">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
